@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4f4;
+  background-color: #333;
+  padding: 2rem 20rem;
+}
+
+svg {
+  color: #f4f4f4;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.number-of-rounds {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.game-space {
+  display: flex;
+  gap: 2rem;
+  min-height: 300px;
+}
+
+.player {
+  background-color: #3b3b3b;
+  border-radius: 0.2rem;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin: 1rem;
+  background-color: #3b3b3b;
+  border: none;
+  cursor: pointer;
+  font-size: 5rem;
+}
+
+.computer-choice {
+  padding: 1rem;
+  font-size: 5rem;
+}
+
+.result {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.result p:first-child {
+  font-size: 2rem;
+}
+
+.result p:nth-child(2) {
+  font-size: 3rem;
+}
+
+.reset {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: #f4f4f4;
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.reset:hover {
+  background-color: #4b4b4b;
+}
+
+@media only screen and (max-width: 1556px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .btn {
+    font-size: 2.6rem;
+  }
+
+  .result p:first-child {
+    font-size: 1rem;
+  }
+
+  .result p:nth-child(2) {
+    font-size: 2rem;
+  }
+}
